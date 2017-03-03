@@ -7,7 +7,6 @@
   #include "audio.h"
 #endif
 #include "eeconfig.h"
-#include "action_tapping.h"
 
 extern keymap_config_t keymap_config;
 
@@ -173,7 +172,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
-static const uint16_t PROGMEM fn_actions[] = {
+const uint16_t PROGMEM fn_actions[] = {
   ACTION_MODS_TAP_KEY(MOD_LSFT, KC_CAPS),      //FN0
   ACTION_MODS_TAP_KEY(MOD_RSFT, KC_ENT),       //FN1
 };
